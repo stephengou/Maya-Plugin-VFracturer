@@ -1,4 +1,4 @@
-Team:  Zhen Gou, Zhenghan Mei
+By: Zhen Gou, Zhenghan Mei  @ UPenn CGGT 2014
 How to compile?
 Build solution directly. All necessary dlls and libs are included. No need to install any 3rd party libraries. *Maya 2012 has to be installed at default location.
 
