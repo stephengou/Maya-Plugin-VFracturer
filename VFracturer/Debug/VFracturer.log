@@ -1,0 +1,247 @@
+﻿Build started 2014/3/24 21:49:07.
+     1>Project "C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\VFracturer\VFracturer.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\VFracturer.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\VFracturer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include /I"C:\local\cgal-4.3\auxiliary\gmp\include" /I"C:\local\cgal-4.3\build\include" /I"C:\local\cgal-4.3\include" /IC:\local\boost_1_55_0 /I..\voro /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt glew.c
+         glew.c
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include /I"C:\local\cgal-4.3\auxiliary\gmp\include" /I"C:\local\cgal-4.3\build\include" /I"C:\local\cgal-4.3\include" /IC:\local\boost_1_55_0 /I..\voro /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp SceneGraph.cpp VClipper.cpp VOperations.cpp
+         VOperations.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\mesh.h(62): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\mesh.h(66): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\voro\common.hh(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\voperations.cpp(158): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\voperations.cpp(158): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\voperations.cpp(158): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(30): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(18) : while compiling class template member function 'void polyhedron_3_builder_from_mesh<HDS>::operator ()(HDS &)'
+                 with
+                 [
+                     HDS=HalfedgeDS
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(77) : see reference to class template instantiation 'polyhedron_3_builder_from_mesh<HDS>' being compiled
+                 with
+                 [
+                     HDS=HalfedgeDS
+                 ]
+     1>c:\local\cgal-4.3\include\cgal\nef_3\snc_point_locator.h(316): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+                 c:\local\cgal-4.3\include\cgal\nef_3\snc_point_locator.h(310) : while compiling class template member function 'void CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>::initialize(CGAL::SNC_structure<Kernel_,Items_,Mark_> *)'
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>,
+                     Kernel_=K,
+                     Items_=CGAL::Default_items<K>::Items,
+                     Mark_=bool
+                 ]
+                 c:\local\cgal-4.3\include\cgal\nef_polyhedron_3.h(1348) : see reference to class template instantiation 'CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>' being compiled
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>
+                 ]
+                 c:\local\cgal-4.3\include\cgal\nef_polyhedron_3.h(1344) : while compiling class template member function 'CGAL::Nef_polyhedron_3<Kernel_> CGAL::Nef_polyhedron_3<Kernel_>::intersection(const CGAL::Nef_polyhedron_3<Kernel_> &) const'
+                 with
+                 [
+                     Kernel_=K
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\voperations.cpp(31) : see reference to class template instantiation 'CGAL::Nef_polyhedron_3<Kernel_>' being compiled
+                 with
+                 [
+                     Kernel_=K
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\algorithm(1119): warning C4996: 'std::_Transform1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\algorithm(1100) : see declaration of 'std::_Transform1'
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\voperations.cpp(61) : see reference to function template instantiation '_OutIt std::transform<CGAL::Iterator_project<I,Fct>,CGAL::Iterator_project<I,Fct>,CGAL::Aff_transformation_3<R_>>(_InIt,_InIt,_OutIt,_Fn1)' being compiled
+                 with
+                 [
+                     _OutIt=CGAL::Iterator_project<CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>>>,CGAL::Project_point<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>>>,
+                     I=CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>>>,
+                     Fct=CGAL::Project_point<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>>,
+                     R_=CGAL::Cartesian<RT>,
+                     _InIt=CGAL::Iterator_project<CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>>>,CGAL::Project_point<CGAL::HalfedgeDS_in_place_list_vertex<CGAL::I_Polyhedron_vertex<CGAL::HalfedgeDS_vertex_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Point_3<CGAL::Cartesian<RT>>>>>>>,
+                     _Fn1=CGAL::Aff_transformation_3<CGAL::Cartesian<RT>>
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\algorithm(1119): warning C4996: 'std::_Transform1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\algorithm(1100) : see declaration of 'std::_Transform1'
+                 c:\local\cgal-4.3\include\cgal\nef_3\polyhedron_3_to_nef_3.h(199) : see reference to function template instantiation '_OutIt std::transform<CGAL::internal::In_place_list_iterator<T,Alloc>,CGAL::Iterator_project<I,Fct>,CGAL::Facet_plane_3>(_InIt,_InIt,_OutIt,_Fn1)' being compiled
+                 with
+                 [
+                     _OutIt=CGAL::Iterator_project<CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,CGAL::Project_plane<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,
+                     T=CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,
+                     Alloc=std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>,
+                     I=CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,
+                     Fct=CGAL::Project_plane<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>,
+                     _InIt=CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,
+                     _Fn1=CGAL::Facet_plane_3
+                 ]
+                 c:\local\cgal-4.3\include\cgal\nef_polyhedron_3.h(567) : see reference to function template instantiation 'void CGAL::polyhedron_3_to_nef_3<CGAL::Polyhedron_3<PolyhedronTraits_3>,CGAL::SNC_structure<Kernel_,Items_,Mark_>>(Polyhedron_ &,SNC_structure &)' being compiled
+                 with
+                 [
+                     PolyhedronTraits_3=K,
+                     Kernel_=K,
+                     Items_=CGAL::Default_items<K>::Items,
+                     Mark_=bool,
+                     Polyhedron_=CGAL::Polyhedron_3<K>,
+                     SNC_structure=CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\voperations.cpp(31) : see reference to function template instantiation 'CGAL::Nef_polyhedron_3<Kernel_>::Nef_polyhedron_3<K,CGAL::Polyhedron_items_3,CGAL::HalfedgeDS_default,std::allocator<_Ty>>(CGAL::Polyhedron_3<PolyhedronTraits_3> &)' being compiled
+                 with
+                 [
+                     Kernel_=K,
+                     _Ty=int,
+                     PolyhedronTraits_3=K
+                 ]
+         VClipper.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\mesh.h(62): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\mesh.h(66): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vclipper.cpp(22): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(30): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(18) : while compiling class template member function 'void polyhedron_3_builder_from_mesh<HDS>::operator ()(HDS &)'
+                 with
+                 [
+                     HDS=HalfedgeDS
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(77) : see reference to class template instantiation 'polyhedron_3_builder_from_mesh<HDS>' being compiled
+                 with
+                 [
+                     HDS=HalfedgeDS
+                 ]
+     1>c:\local\cgal-4.3\include\cgal\nef_3\snc_point_locator.h(316): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+                 c:\local\cgal-4.3\include\cgal\nef_3\snc_point_locator.h(310) : while compiling class template member function 'void CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>::initialize(CGAL::SNC_structure<Kernel_,Items_,Mark_> *)'
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>,
+                     Kernel_=K,
+                     Items_=CGAL::Default_items<K>::Items,
+                     Mark_=bool
+                 ]
+                 c:\local\cgal-4.3\include\cgal\nef_polyhedron_3.h(1348) : see reference to class template instantiation 'CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>' being compiled
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>
+                 ]
+                 c:\local\cgal-4.3\include\cgal\nef_polyhedron_3.h(1344) : while compiling class template member function 'CGAL::Nef_polyhedron_3<Kernel_> CGAL::Nef_polyhedron_3<Kernel_>::intersection(const CGAL::Nef_polyhedron_3<Kernel_> &) const'
+                 with
+                 [
+                     Kernel_=K
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vclipper.h(17) : see reference to class template instantiation 'CGAL::Nef_polyhedron_3<Kernel_>' being compiled
+                 with
+                 [
+                     Kernel_=K
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\algorithm(1119): warning C4996: 'std::_Transform1': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\algorithm(1100) : see declaration of 'std::_Transform1'
+                 c:\local\cgal-4.3\include\cgal\nef_3\polyhedron_3_to_nef_3.h(199) : see reference to function template instantiation '_OutIt std::transform<CGAL::internal::In_place_list_iterator<T,Alloc>,CGAL::Iterator_project<I,Fct>,CGAL::Facet_plane_3>(_InIt,_InIt,_OutIt,_Fn1)' being compiled
+                 with
+                 [
+                     _OutIt=CGAL::Iterator_project<CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,CGAL::Project_plane<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,
+                     T=CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,
+                     Alloc=std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>,
+                     I=CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,
+                     Fct=CGAL::Project_plane<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>,
+                     _InIt=CGAL::internal::In_place_list_iterator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>,std::allocator<CGAL::HalfedgeDS_in_place_list_face<CGAL::I_Polyhedron_facet<CGAL::HalfedgeDS_face_base<CGAL::HalfedgeDS_list_types<CGAL::Cartesian<RT>,CGAL::I_Polyhedron_derived_items_3<CGAL::Polyhedron_items_3>,std::allocator<int>>,CGAL::Tag_true,CGAL::Plane_3<CGAL::Cartesian<RT>>>>>>>,
+                     _Fn1=CGAL::Facet_plane_3
+                 ]
+                 c:\local\cgal-4.3\include\cgal\nef_polyhedron_3.h(567) : see reference to function template instantiation 'void CGAL::polyhedron_3_to_nef_3<CGAL::Polyhedron_3<PolyhedronTraits_3>,CGAL::SNC_structure<Kernel_,Items_,Mark_>>(Polyhedron_ &,SNC_structure &)' being compiled
+                 with
+                 [
+                     PolyhedronTraits_3=K,
+                     Kernel_=K,
+                     Items_=CGAL::Default_items<K>::Items,
+                     Mark_=bool,
+                     Polyhedron_=CGAL::Polyhedron_3<K>,
+                     SNC_structure=CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vclipper.cpp(14) : see reference to function template instantiation 'CGAL::Nef_polyhedron_3<Kernel_>::Nef_polyhedron_3<K,CGAL::Polyhedron_items_3,CGAL::HalfedgeDS_default,std::allocator<_Ty>>(CGAL::Polyhedron_3<PolyhedronTraits_3> &)' being compiled
+                 with
+                 [
+                     Kernel_=K,
+                     _Ty=int,
+                     PolyhedronTraits_3=K
+                 ]
+         SceneGraph.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\scenegraph.cpp(41): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\scenegraph.cpp(54): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\scenegraph.cpp(86): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\scenegraph.cpp(116): warning C4018: '<' : signed/unsigned mismatch
+         main.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\mesh.h(62): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\mesh.h(66): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(55): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(142): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(149): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(164): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(176): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(176): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(176): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(164): warning C4101: 'mZ' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(164): warning C4101: 'mX' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(164): warning C4101: 'mat' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(224): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(228): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(228): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(228): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(233): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(233): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(233): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(190): warning C4101: 'mZ' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(190): warning C4101: 'mX' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(190): warning C4101: 'mat' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(269): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(269): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(269): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(305): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(441): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(446): warning C4018: '>=' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(451): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(476): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(480): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(558): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(585): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(707): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\main.cpp(795): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(30): warning C4018: '<' : signed/unsigned mismatch
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(18) : while compiling class template member function 'void polyhedron_3_builder_from_mesh<HDS>::operator ()(HDS &)'
+                 with
+                 [
+                     HDS=HalfedgeDS
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer\vfracturer\vconverter.h(77) : see reference to class template instantiation 'polyhedron_3_builder_from_mesh<HDS>' being compiled
+                 with
+                 [
+                     HDS=HalfedgeDS
+                 ]
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\Debug\VFracturer.mll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:/local/cgal-4.3/build/lib" /LIBPATH:"C:/local/cgal-4.3/build/lib/Debug" /LIBPATH:"C:/local/boost_1_55_0/lib32-msvc-10.0" /LIBPATH:"C:/local/boost_1_55_0/lib32-msvc-10.0/Debug" /LIBPATH:../freeglut/lib vorodll.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\local\cgal-4.3\auxiliary\gmp\lib\libmpfr-4.lib" "C:\local\cgal-4.3\auxiliary\gmp\lib\libgmp-10.lib" /MANIFEST /ManifestFile:"Debug\VFracturer.mll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\Debug\VFracturer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\Debug\VFracturer.lib" /MACHINE:X86 /DLL Debug\glew.obj
+         Debug\main.obj
+         Debug\SceneGraph.obj
+         Debug\VClipper.obj
+         Debug\VOperations.obj
+     1>glew.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+     1>vorodll.lib(voro++.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'vorodll.lib(voro++.obj)' or at 'C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\Debug\vc100.pdb'; linking object as if no debug info
+         VFracturer.vcxproj -> C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\Debug\VFracturer.mll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\Debug\VFracturer.mll;#2" /manifest Debug\VFracturer.mll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\VFracturer.unsuccessfulbuild".
+         Touching "Debug\VFracturer.lastbuildstate".
+     1>Done Building Project "C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer\VFracturer\VFracturer.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:35.22

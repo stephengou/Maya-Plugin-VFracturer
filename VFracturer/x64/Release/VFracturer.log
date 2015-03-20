@@ -1,0 +1,151 @@
+﻿Build started 2014/5/12 23:24:49.
+     1>Project "C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\VFracturer\VFracturer.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Release\VFracturer.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Release\VFracturer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\..\include /I..\gmp\include /I..\ /I..\voro /I"C:\Program Files\Autodesk\Maya2012\include" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NT_PLUGIN /D REQUIRE_IOSTREAM /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt VFracturerNode.cpp PluginMain.cpp SceneGraph.cpp VClipper.cpp VOperations.cpp /GR /GS /EHac /bigobj 
+     1>cl : Command line warning D9025: overriding '/EHs' with '/EHa'
+         VFracturerNode.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(48): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(52): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(81): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(69): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(86): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(101): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(93): warning C4101: 'index' : unreferenced local variable
+     1>VFracturerNode.cpp(329): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VFracturerNode.cpp(329): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VFracturerNode.cpp(329): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VFracturerNode.cpp(343): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         PluginMain.cpp
+         SceneGraph.cpp
+         VClipper.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(48): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(52): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(81): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(69): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(86): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(101): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(93): warning C4101: 'index' : unreferenced local variable
+     1>C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_3/SNC_point_locator.h(316): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+                 C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_3/SNC_point_locator.h(310) : while compiling class template member function 'void CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>::initialize(CGAL::SNC_structure<Kernel_,Items_,Mark_> *)'
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>,
+                     Kernel_=K,
+                     Items_=CGAL::Default_items<K>::Items,
+                     Mark_=bool
+                 ]
+                 C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_polyhedron_3.h(1348) : see reference to class template instantiation 'CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>' being compiled
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>
+                 ]
+                 C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_polyhedron_3.h(1344) : while compiling class template member function 'CGAL::Nef_polyhedron_3<Kernel_> CGAL::Nef_polyhedron_3<Kernel_>::intersection(const CGAL::Nef_polyhedron_3<Kernel_> &) const'
+                 with
+                 [
+                     Kernel_=K
+                 ]
+                 c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VClipper.h(19) : see reference to class template instantiation 'CGAL::Nef_polyhedron_3<Kernel_>' being compiled
+                 with
+                 [
+                     Kernel_=K
+                 ]
+         VOperations.cpp
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(48): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(52): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\Mesh.h(81): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(56): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(69): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(86): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(89): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(101): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\vfracturer\VConverter.h(93): warning C4101: 'index' : unreferenced local variable
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\voro\common.hh(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\zhen gou\documents\visual studio 2010\projects\vfracturer_maya_release v1.0\voro\pre_container.hh(61): warning C4244: 'return' : conversion from '__int64' to 'int', possible loss of data
+     1>VOperations.cpp(166): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(166): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(166): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(257): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(257): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(257): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(462): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(462): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(462): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(321): warning C4101: 'impactZ' : unreferenced local variable
+     1>VOperations.cpp(321): warning C4101: 'impactX' : unreferenced local variable
+     1>VOperations.cpp(308): warning C4101: 'impactID' : unreferenced local variable
+     1>VOperations.cpp(321): warning C4101: 'impactY' : unreferenced local variable
+     1>VOperations.cpp(506): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(507): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(509): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(510): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(512): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>VOperations.cpp(513): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_3/SNC_point_locator.h(316): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+                 C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_3/SNC_point_locator.h(310) : while compiling class template member function 'void CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>::initialize(CGAL::SNC_structure<Kernel_,Items_,Mark_> *)'
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>,
+                     Kernel_=K,
+                     Items_=CGAL::Default_items<K>::Items,
+                     Mark_=bool
+                 ]
+                 C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_polyhedron_3.h(1348) : see reference to class template instantiation 'CGAL::SNC_point_locator_by_spatial_subdivision<SNC_decorator>' being compiled
+                 with
+                 [
+                     SNC_decorator=CGAL::SNC_decorator<CGAL::SNC_structure<K,CGAL::Default_items<K>::Items,bool>>
+                 ]
+                 C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\CGAL/Nef_polyhedron_3.h(1344) : while compiling class template member function 'CGAL::Nef_polyhedron_3<Kernel_> CGAL::Nef_polyhedron_3<Kernel_>::intersection(const CGAL::Nef_polyhedron_3<Kernel_> &) const'
+                 with
+                 [
+                     Kernel_=K
+                 ]
+                 VOperations.cpp(33) : see reference to class template instantiation 'CGAL::Nef_polyhedron_3<Kernel_>' being compiled
+                 with
+                 [
+                     Kernel_=K
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.mll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\Autodesk\Maya2012\lib" /LIBPATH:Release /LIBPATH:"../boost_1_55_0/lib32-msvc-10.0/Release" Foundation.lib OpenMaya.lib vorodll.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "libmpfr-4.lib" "libgmp-10.lib" /MANIFEST /ManifestFile:"x64\Release\VFracturer.mll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.lib" /MACHINE:X64 /DLL x64\Release\VFracturerNode.obj
+         x64\Release\PluginMain.obj
+         x64\Release\SceneGraph.obj
+         x64\Release\VClipper.obj
+         x64\Release\VOperations.obj /export:initializePlugin /export:uninitializePlugin  
+            Creating library C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.lib and object C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.exp
+         Generating code
+         Finished generating code
+     1>vorodll.lib(voro++.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'vorodll.lib(voro++.obj)' or at 'C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\vc100.pdb'; linking object as if no debug info
+     1>vorodll.lib(stdafx.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'vorodll.lib(stdafx.obj)' or at 'C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\vc100.pdb'; linking object as if no debug info
+         VFracturer.vcxproj -> C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.mll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\x64\Release\VFracturer.mll;#2" /manifest x64\Release\VFracturer.mll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\VFracturer.unsuccessfulbuild".
+         Touching "x64\Release\VFracturer.lastbuildstate".
+     1>Done Building Project "C:\Users\Zhen Gou\Documents\Visual Studio 2010\Projects\VFracturer_maya_release V1.0\VFracturer\VFracturer.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:47.82

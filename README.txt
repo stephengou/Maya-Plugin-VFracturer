@@ -1,0 +1,9 @@
+Team:  Zhen Gou, Zhenghan Mei
+How to compile?
+Build solution directly. All necessary dlls and libs are included. No need to install any 3rd party libraries. *Maya 2012 has to be installed at default location.
+
+How to load plugin?
+copy all files in "FOR_MAYA_BIN" folder to the bin folder of Maya 2012
+
+
+

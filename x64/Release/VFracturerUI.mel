@@ -1,0 +1,251 @@
+global string $window;
+global string $isLocal;
+global string $isHarden;
+global string $isRigid;
+global string $ndecompCellSlider;
+global string $radiusSlider;
+global string $npatternCellSlider;
+global string $impactPercentageSlider;
+global string $nObjSlider;
+
+global proc VFracture()
+{
+    global string $myMenu;
+    
+    if(`menu -exists $myMenu`)
+        deleteUI $myMenu;
+    $myMenu=`menu -l "VFracturer" -p MayaWindow`;
+    menuItem -l "Fracture Selected Mesh" -c createDefaultVFracture;
+    menuItem -l "VFracture Setting" -c popFractureSetting;
+    
+}
+global proc popFractureSetting()
+{
+    
+    // for vertex color
+
+    //
+    global string $ndecompCellSlider;
+    global string $radiusSlider;
+    global string $npatternCellSlider;
+    global string $impactPercentageSlider;
+    global string $nObjSlider;
+    global string $window;
+    global string $isLocal;
+    global string $isHarden;
+    global string $isRigid;
+    string $filePath = "C:/Users/Administrator/Documents/Visual Studio 2010/Projects/VFracturer_maya BETA2.0/VFracturer_maya/x64/Debug/";
+    $window = `window -title "VFracture Setting" -visible true -width 200 -height 400`;
+    columnLayout -adjustableColumn 1;
+    frameLayout FractureSetting;
+        $ndecompCellSlider=`intSliderGrp -label "Number of Cells" -field true -value 6`;
+        $radiusSlider=`floatSliderGrp -label "Impact Radius" -field true -value 0.5`;
+        $isLocal = `checkBox -label "Enable Local Fracture"`;
+        $isHarden = `checkBox -label "Harden Edge"`;
+    frameLayout PatternSetting;
+        $npatternCellSlider=`intSliderGrp -label "Number of cells at impact" -field true -value 6`;
+        $impactPercentageSlider=`floatSliderGrp -label "Impact Percentage" -field true -value 0.05`;
+        radioButtonGrp
+            -numberOfRadioButtons 3
+            -label "Pattern Type"
+            -labelArray3 "Default" "Web" "custom pattern"
+            -select 1
+            myRadBtnGrp;
+         rowLayout -numberOfColumns 2
+             -ct2 "left" "left"
+             -co2 160 50;
+         image -w 51-h 46 -i ($filePath + "voro.bmp");
+         image -w 51-h 46 -i ($filePath + "web.bmp");
+         setParent ..;
+    frameLayout "customPatternSetting(for custom pattern ONLY)";
+         $nObjSlider=`intSliderGrp -label "Num of custom pattern cells" -field true -value 5`;
+    setParent ..;
+    frameLayout OutputSetting;
+        $isRigid = `checkBox -label "Create Rigidbody Dynamics"`;
+        setParent ..;
+
+    formLayout -numberOfDivisions 100 myForm;
+          button -label "Apply" -c createVFracture applyButton ;
+          button -label "Cancel" -command "deleteUI $window" cancelButton;
+          button -label "Highlight Impact Position" -c highlightImpact highlightButton;
+    formLayout -edit
+          -attachForm applyButton "top" 10
+          -attachForm applyButton "left" 150 
+          -attachForm cancelButton "top" 10
+          -attachForm cancelButton "left" 200 
+          -attachForm highlightButton "top" 10
+          -attachForm highlightButton "left" 250
+
+     myForm;
+    showWindow $window;    
+}
+
+global proc highlightImpact()
+{
+    polyColorPerVertex -r 0.5 -g 0 -b 0 -a 1 -cdo;
+    polyColorSet -delete;
+    polyColorPerVertex -r 0.5 -g 0 -b 0 -a 1 -cdo;
+}
+global proc createDefaultVFracture()
+{
+    //test impact pos 0.687071 0.713019 0.52608 // 
+    //grab selected nodes' shape node
+    global string $radiusSlider;
+    string $array[] = `ls -sl`;
+    
+    string $relatives[] = `listRelatives -shapes $array[0]`;
+    string $shape=$relatives[0]+".outMesh";
+    int $type = 1;
+
+    polyTriangulate -ch 1 $array[0];
+    //create VFracture Node
+    $transform = `createNode transform`;
+    $mesh = `createNode mesh -p $transform`;
+    sets -add initialShadingGroup $mesh;
+    $node = `createNode VFracturerNode`;
+    //float $r = `floatSliderGrp -q -v $radiusSlider`;
+    setAttr ($node + ".pType") $type;
+    //setAttr "VFracturerNode1.iP" $per;
+    connectAttr $shape ($node + ".inputMesh");
+    connectAttr ($node + ".outputMesh ") ($mesh + ".inMesh");  
+    select -r $transform ;
+    DeleteAllHistory;
+    delete -all -constructionHistory;
+    polySoftEdge -a 0 -ch 1 $mesh;
+    polySeparate -ch 1 $mesh;
+}
+
+global proc createVFracture()
+{
+    //polyColorPerVertex -r 0.5 -g 0 -b 0 -a 1 -cdo;
+    //test impact pos 0.687071 0.713019 0.52608 // 
+    //grab selected nodes' shape node
+    global string $radiusSlider;
+    global string $ndecompCellSlider;
+    global string $npatternCellSlider;
+    global string $impactPercentageSlider;
+    global string $nObjSlider;
+    global string $isLocal;
+    global string $isRigid;
+    global string $isHarden;
+    string $buffer[]; 
+    string $shape;
+    string $relatives[];
+    string $array[];
+    float $impact[];
+    float $x, $y, $z;
+    float $center[];
+    $array = `ls -sl`;
+    $numTokens = `tokenize $array[0] "." $buffer`;
+    $relatives = `listRelatives -shapes $buffer[0]`;
+    $shape=$relatives[0]+".outMesh";   
+    
+    int $type = `radioButtonGrp -q -select myRadBtnGrp`;
+    
+    //print($test);
+    int $islocal = `checkBox -q -v $isLocal`;
+    int $isharden = `checkBox -q -v $isHarden`;
+   
+  
+    //float $impact[] = `getAttr ($array[1])`;
+    //print($indices[0]);
+    //create VFracture Node
+    $transform = `createNode transform`;
+    $mesh = `createNode mesh -p $transform`;
+    sets -add initialShadingGroup $mesh;
+    $node = `createNode VFracturerNode`;
+     if($islocal == 1)
+    {   
+
+        $center = `getAttr ($buffer[0]+".translate")`;
+        $impact  = `xform -q -t -ws $array[0]`;
+        $x = $impact[0] - $center[0];
+        $y = $impact[1] - $center[1];
+        $z = $impact[2] - $center[2];
+        setAttr ($node + ".fractureMode") 1;
+    }
+    else
+    {
+        if($type==3) 
+        {
+            setAttr ($node + ".fractureMode") 2; 
+            int $num= `intSliderGrp -q -v $nObjSlider`;
+           setAttr ($node + ".objPatternNum") $num; 
+        }
+        else setAttr ($node + ".fractureMode") 0;
+    }
+    //float $x=0.1;float $y=0.1;float $z=0.0;float $r=0.4; float $per=0.08;
+    setAttr ($node + ".pType") $type;
+    setAttr ($node + ".iX") $x;
+    setAttr ($node + ".iY") $y;
+    setAttr ($node + ".iZ") $z;
+    float $r = `floatSliderGrp -q -v $radiusSlider`;
+    float $impactper = `floatSliderGrp -q -v $impactPercentageSlider`;
+    int $ndc = `intSliderGrp -q -v $ndecompCellSlider`;
+    int $npc;
+    $npc= `intSliderGrp -q -v $npatternCellSlider`;
+
+    
+    setAttr ($node + ".iR") $r;
+    setAttr ($node + ".dNum") $ndc;
+    setAttr ($node + ".pNum") $npc;
+    setAttr ($node + ".iP") $impactper;
+    connectAttr $shape ($node + ".inputMesh");
+    connectAttr ($node + ".outputMesh ") ($mesh + ".inMesh");  
+    
+    int $isrigid = `checkBox -q -v $isRigid`;
+    if($isrigid == 0)
+    {
+        
+        select -r $transform ;
+        DeleteAllHistory;
+        delete -all -constructionHistory;
+        if($isharden)
+        {
+            polySoftEdge -a 0 -ch 1 $mesh;
+        }
+        polySeparate -ch 1 $mesh;
+        print("no rigid body dynamics setup");
+    }
+    else
+    {
+        
+        //setup a passive floor
+        string $floor[]=`polyCube -ch on -o on -w 50.0 -h 3.0 -d 50.0`;
+        move -r 0 -10.0 0 ;
+        rigidBody -passive -m 1.342 -dp 0 -sf 0.2 -df 0.2 -b 0.6 -l 0 -tf 300 -iv 0 0 0 -iav 0 0 0 -c 1 -pc 0 -i 0 0 0 -imp 0 0 0 -si 0 0 0 -sio none ;
+      
+        //create a gravity field
+        gravity -pos 0 0 0 -m 9.8 -att 0 -dx 0 -dy -1 -dz 0  -mxd -1  -vsh none -vex 0 -vof 0 0 0 -vsw 360 -tsr 0.5 ;
+    
+        //set up rigidbody for the fracturer output
+        select -r $transform;
+        DeleteAllHistory;
+        delete -all -constructionHistory;
+        if($isharden)
+        {
+            polySoftEdge -a 0 -ch 1 $mesh;
+        }
+        polySeparate -ch 1 $mesh;
+        rigidBody -active -m 1.0 -dp 0 -sf 0.2 -df 0.2 -b 0.6 -l 0 -tf 300 -iv 0 0 0 -iav 0 0 0 -c 1 -pc 0 -i 0 0 0 -imp 0 0 0 -si 0 0 0 -sio cube ;
+        
+        int $i=0;
+        string $selected[]=`ls -sl`;
+        for($i=0;$i<size($selected);$i++)
+        {
+            string $obj=$selected[$i];
+            connectDynamic -f "gravityField1" $obj;
+        }
+        print("rigidody dynamics successfully setup!");
+    }  
+}
+
+
+global proc deleteMyUI()
+{
+        global string $myMenu;
+        deleteUI $myMenu;
+}
+
+VFracture();
+//createVFracture();
