@@ -5,5 +5,7 @@ Build solution directly. All necessary dlls and libs are included. No need to in
 How to load plugin?
 copy all files in "FOR_MAYA_BIN" folder to the bin folder of Maya 2012
 
-
-
+3RD Party Libraries:
+CGAL: http://www.cgal.org/
+Boost: http://www.boost.org/
+Voro++ :http://math.lbl.gov/voro++/
